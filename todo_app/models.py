@@ -3,7 +3,7 @@ from django.db import models
 class ToDo(models.Model):
     title = models.CharField("Название задания",max_length=100)
     is_complete = models.BooleanField("Завершено",default=False)
-    description = models.TextField("Описание",max_length=300,null=None)
+    description = models.TextField("Описание",max_length=300)
 
 
     class Meta:
